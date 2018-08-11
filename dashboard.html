@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stack Overflow Lite</title>
+    <!-- Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp Assessment." />
+    <meta name="author" content="Mwangi Thiga" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+</head>
+
+<body class="grid-container">
+    <div class="header">
+        <div class="col-3 col-ss-12 col-s-12 topHolder">
+            <img class="indexLogo" onclick="toggleNav()" src="images/logoin.png">
+        </div>
+        <div class="col-9 col-ss-12 col-s-12 topUserName">
+
+        </div>
+
+    </div>
+
+    <div class="row bodyholder ">
+
+        <div id="mySidenav" class="sidenav ">
+            <div class="col-2 col-ss-12 col-s-12 menu ">
+
+                <div class="collapsibleMenuData">
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <i class="fas fa-home"></i> Home</li>
+                        </a>
+                        <a href="createquestion.html">
+                            <li>
+                                <i class="fas fa-question"></i> Create Question</li>
+                        </a>
+                        <a href="profile.html">
+                            <li>
+                                <i class="fas fa-user"></i> My Profile</li>
+                        </a>
+                        <a href="index.html">
+                            <li>
+                                <i class="fas fa-sign-out-alt"></i> Log Out</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- <div class="col-2 col-ss-12 col-s-12 ">
+            
+        </div> -->
+        <div id="mainContent">
+
+            <div class="col-12 col-ss-12 col-s-12 contentWrap">
+
+                <div class="col-6 col-ss-12 col-s-12  mainContainer">
+                    <div class="inacore">
+                        <div class="div-head">
+                            <h2 class="div-title">
+                                <i class="far fa-hand-paper"></i> Hello {User Name}</h2>
+                        </div>
+                        <div class="div-body">
+                            <p>12 Badges</p>
+                            <p>Reputation 1000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-ss-12 col-s-12  mainContainer">
+                    <div class="inacore">
+                        <div class="div-head">
+                            <h2 class="div-title">
+                                <i class="fa fa-bell"></i> Notifications</h2>
+                        </div>
+                        <div class="div-body">
+                            <p>1 new upvote</p>
+                            <p>18 New questions today</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-2 col-ss-12 col-s-12 ">
+
+                </div>
+
+                <div class="col-12 col-ss-12 col-s-12  mainContainer">
+                    <div class="inacore">
+                        <div class="div-head">
+                            <h2 class="div-title">
+                                <i class="fas fa-link"></i> Top Questions Today</h2>
+                        </div>
+                        <div class="div-body">
+                            <!-- <a href="dashboard.html">Client side</a><br>
+                        <a href="adminViewRequests.html">Admin Side</a> -->
+                            <tableholder class="tableHolder">
+                                <table id="pending">
+                                    <tbody>
+                                        <tr>
+                                            <th>Question</th>
+                                            <th>Answers</th>
+                                            <th>Tag</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="viewonequestion.html" class="hometoplink">What is flask?</a>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Python</td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </tableholder>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+    <script src="javascript/mainscript.js"></script>
+</body>
+
+</html>
