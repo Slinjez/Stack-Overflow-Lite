@@ -1,0 +1,285 @@
+/*probaly this is the only file i'll use*/
+
+/*makes sure that the padding and border are included in the total width and height of the elements.*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* scroll bar */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 3px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #6e3031;
+    border-radius: 8px;
+}
+
+/* universal */
+
+/*the background */
+
+body {
+    background-image: url("../images/pexelsphotobg1.jpg");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    /* optional, center the image */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*the grid layout*/
+
+/*media queries*/
+
+[class*="col-"] {
+    float: left;
+    padding: 8px;
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    /*pass*/
+    /* For small phones: s for super small*/
+    .col-ss-6 {
+        width: 50%;
+    }
+    .col-ss-12 {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    /*pass*/
+    /* For tablets: s for small*/
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    /*pass*/
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    /*pass*/
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /*pass*/
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+/* unvisited link */
+
+a:link {
+    color: rgb(224, 140, 141);
+}
+
+/* visited link */
+
+a:visited {
+    color: #4e3131;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: #4e3131;
+}
+
+/* selected link */
+
+a:active {
+    color: #4e3131;
+}
+
+.button {
+    background-color: #e08c8d;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #984243;
+    color: white;
+}
+
+.form-alert-message {
+    text-align: center;
+    color: #f4faff;
+}
+
+.error {
+    color: red;
+}
+
+.warning {
+    color: yellow;
+}
+
+/* login and signup page */
+
+.form-title {
+    color: #fff;
+    text-align: center;
+}
+
+.loginsignup-div {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 360px;
+    background-color: rgba(110, 48, 49, 0.70);
+    border-radius: 13px;
+    padding: 10px;
+    box-shadow: 0 18px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup-form {
+    height: 430px;
+}
+
+.logoHolder {
+    text-align: center;
+}
+
+.indexLogo {
+    width: 100px;
+    height: auto;
+}
+
+input,
+a,
+textarea {
+    width: 100%;
+    margin: 0;
+    border: 3px #999;
+    border-radius: 0;
+    padding: 8px;
+    border-radius: 13px;
+    -webkit-box-sizing: border-box;
+    /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box;
+    /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+select {
+    border-radius: 8px;
+    width: 100%;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: menulist-button;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.center {
+    text-align: center;
+}
+
+/*tabs*/

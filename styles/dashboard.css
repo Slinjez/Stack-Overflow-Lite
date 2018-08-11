@@ -1,0 +1,321 @@
+/*overides style specifically for  dashboads*/
+
+/*the background */
+
+body {
+    background: linear-gradient(to right,#a5484994,#9a4e50bf) !important;
+    /* background: #03a9f496 url("../images/bgimggrad.jpg") right no-repeat; */
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    /* optional, center the image */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input,
+a,
+textarea {
+    width: 100%;
+    margin: 0;
+    border: 3px #999;
+    border-radius: 0;
+    padding: 8px;
+    border-radius: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.row:before, 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.bodyholder {
+    padding-top: 70px;
+}
+
+.contentWrap {
+    /* background-color: rgba(178, 203, 212, 0.9); */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainContainer {
+    background-color: transparent;
+    position: relative;
+    border-radius: 8px;
+    float: left;
+    color: #fff;
+    position: initial;
+    /* margin-right: 20px; */
+    margin-bottom: 10px
+}
+
+.inacore{
+	background-color: rgba(110, 48, 49, 0.88);
+    padding:10px;
+}
+
+.div-head {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.mainContainer:hover .inacore {
+    background-color: rgba(110, 48, 49, 0.98);
+}
+
+/*dashboardpages*/
+
+.header {
+    background-color: #6e3031;
+    color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 12;
+}
+
+
+
+dashBoardBg {
+    background-color: #0099cc;
+}
+
+.vertical-menu {
+    width: 100%;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    border-color: #fff;
+    border: 1px;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #33b5e5;
+    color: white;
+}
+
+.div-title {
+    color: #fff;
+}
+
+.div-title {
+    top: 0px;
+    margin: 0px;
+    padding: 0px 2px 2px 3px;
+    border-width: 2px;
+    border-bottom-width: 2px;
+    border-bottom-color: White;
+    border-bottom-style: solid;
+    width: 100%;
+    text-align: center;
+}
+
+.menuOpener {
+    text-align: right;
+    display: flex;
+    align-items: right;
+}
+
+.sidenav {
+    height: 0%;
+    /*vertical slide 100*/
+    width: 250;
+    /*horizontal 100*/
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    /*change l t r*/
+    background-color: rgba(110, 48, 49, 0.9);
+    overflow-x: hidden;
+    padding-top: 60px;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+#mySidenav {
+    position: none;
+    visibility: hidden;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 24;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+[class*='col-'] {
+        
+        min-height: 1px; 
+        /*-- our gutter --*/
+        padding: 2px;
+		
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+		margin-top: -30px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .sidenav .closebtn {
+        top: 32;
+    }
+    /* .sidenav {top: 32px;} */
+}
+
+@media screen and (min-height: 450px) {
+    .sidenav {
+		margin-top: -30px;
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .sidenav .closebtn {
+        top: 32;
+    }
+    /* .sidenav {top: 0px;} */
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        width: 150px;
+    }
+    .menu {
+        min-width: 150px;
+    }
+    #mainContent {
+        margin: 0px 0px 0px 0px;
+    }
+    /* .sidenav {top: 32px;} */
+}
+
+.topHolder {
+    width: 100px;
+    height: auto;
+}
+
+.topUserName {
+    text-align: center;
+}
+
+#mainContent {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.requests {
+    background-color: #207090;
+    margin-top: 8px;
+    margin-right: 30px;
+    margin-left: 30px;
+    z-index: 101;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: white;
+}
+
+/* selected link */
+
+a:active {
+    color: #33b5e5;
+}
+
+.floatLeft{
+	float:left;
+}
+.floatRight{
+	float:right;
+}
+
+.menu {
+    background-color: transparent;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 24;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 8px;
+    margin: auto;
+    min-width: 200px;
+}
+
+.collapsibleMenuData {
+    padding: 0 18px;
+    display: contents;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: rgb(110, 48, 49);
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    border: 1px #ffffff;
+    border-style: solid;
+    padding: 8px;
+    border-radius: 13px;
+}
+
+.menu li:hover {
+    background-color: #C15455;
+}
+
+a {text-decoration: none;}
+
+/*tabs*/
+
+
