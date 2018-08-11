@@ -316,6 +316,31 @@ a:active {
 
 a {text-decoration: none;}
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #C17274;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #C1547D;
+}
+tr:nth-child(odd) {
+    background-color: #763a3b;
+}
+
+.hometoplink{
+    color: white;
+}
+.hometoplink:link {
+    color: white !important;
+}
 /*tabs*/
 
 
