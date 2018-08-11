@@ -345,6 +345,9 @@ tr:nth-child(odd) {
 .menu li:active {
     background-color: #C15455;
 }
+.profpicholder{
+    text-align: center;
+}
 /*tabs*/
 
 
